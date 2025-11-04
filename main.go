@@ -1,9 +1,12 @@
 package main
 
 import (
+	"gin-api/database"
 	"gin-api/routes"
 )
 
 func main() {
-	routes.HandleRequests()
+	database.ConectaComBancoDeDados()
+
+	routes.HandleRequest()
 }
