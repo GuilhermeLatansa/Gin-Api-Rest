@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
+	"gin-api/routes"
 )
 
 func main() {
-	r := gin.Default()
-	r.Run(":5000")
+	routes.HandleRequests()
 }
